@@ -40,10 +40,12 @@ Service Accounts, instead of just using API keys, I am gonna use service account
 
 
 # 5 AWS setup and instructions 
-| Header 1 | Header 2 | Header 3 |
+| Component | Configuration | Justification |
 | :--- | :---: | ---: |
-| Left-aligned | Centered | Right-aligned |
-| Row 2 | Row 2 | Row 2 |
+| VPC block | 10.0.0.0/16  | Standart private range that allows 65536 IPS, offers rooms to scale later as well |
+| Subnet Block | 10.0.1.0/24 | keeping it in /24 makes it easier small scale,this is used for the grafana front end |
+| Route Table | 0.0.0.0/0 IGW | This is needed to be able to fetch updates, and be able to reach the internet |
+| Network ACL | Allow inboud, 443, 22 | A secondary defense for the subnet itself |
 
 # 6 Security and Access
 ## Admin
