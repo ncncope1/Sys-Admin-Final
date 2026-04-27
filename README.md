@@ -35,31 +35,31 @@ Role based controls RWE (Read Write Edit)
 # System Access
 Service Accounts, instead of just using API keys, I am gonna use service accounts as they are easier (this may change cause API is also easier to setup)
 
-##4 Demonstration 
-#this will be done once done 
+## 4 Demonstration 
+# this will be done once done 
 
 
-##5 AWS setup and instructions 
-#this is done out of order as im doing it when I actually did it
+## 5 AWS setup and instructions 
+# this is done out of order as im doing it when I actually did it
 
 ## 6 Security and Access
-#Admin
+# Admin
 Admininstration will be done via ssh by using RSA keys
 # Application Access
 Users will use it via a browser
 Admin has full control
 User can only view
-#System based firewall
+# System based firewall
 ufw is enabled on OS level
 
-##7 Software Features
+## 7 Software Features
 Data source integration, seamless connection is useful for this
 
 provisioning,using YAMl files to automatically load and use dashboards
 
 it also alerts automatically
 
-##8 Backup and Disaster using the 3-2-1 rule
+## 8 Backup and Disaster using the 3-2-1 rule
 
 3 copies, in Live DB, local and S3 cloud
 
