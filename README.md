@@ -40,6 +40,8 @@ Service Accounts, instead of just using API keys, I am gonna use service account
 
 
 # 5 AWS setup and instructions 
+
+## VPC setup
 | Component | Configuration | Justification |
 | :--- | :---: | ---: |
 | VPC block | 10.0.0.0/16  | Standart private range that allows 65536 IPS, offers rooms to scale later as well |
@@ -47,6 +49,13 @@ Service Accounts, instead of just using API keys, I am gonna use service account
 | Route Table | 0.0.0.0/0 IGW | This is needed to be able to fetch updates, and be able to reach the internet |
 | Network ACL | Allow inboud, 443, 22 | A secondary defense for the subnet itself |
 
+## Security Group rules
+
+| Protocol | Port | Source | Purpose |
+| :--- | :---: | ---: | ---: |
+| SSH | 22 | Only Admin IP | Secure Remote Admin Access |
+| HTTPS | 443 | 0.0.0.0/0 | End User Access | 
+| Custom TCP | 3000 | Admin IP | initial admin setup |
 # 6 Security and Access
 ## Admin
 Admininstration will be done via ssh by using RSA keys
