@@ -13,10 +13,17 @@ Ubuntu is going to be what I chose, as its both good for the job and the OS I ha
 Linux is also the native habitat for Grafana so that simplifies the choice significantly 
 
 ## Installation Steps
+
+# First
 sudo apt-get install -y apt-transport-https software-properties-common wget
+# Second and ensure directory was made
 sudo mkdir -p /etc/apt/keyrings/
+#Third
 wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+#Fourth 
 echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee /etc/apt/apt/sources.list.d/grafana.list
+#Fifth
 sudo apt-get update && sudo apt-get install grafana
+#Sixth
 sudo systemctl enable --now grafana-server
 # follow the above listed commands
