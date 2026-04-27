@@ -40,7 +40,10 @@ Service Accounts, instead of just using API keys, I am gonna use service account
 
 
 # 5 AWS setup and instructions 
-## this is done out of order as im doing it when I actually did it
+| Header 1 | Header 2 | Header 3 |
+| :--- | :---: | ---: |
+| Left-aligned | Centered | Right-aligned |
+| Row 2 | Row 2 | Row 2 |
 
 # 6 Security and Access
 ## Admin
