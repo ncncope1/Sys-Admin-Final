@@ -38,7 +38,17 @@ Service Accounts, instead of just using API keys, I am gonna use service account
 # 4 Demonstration 
 ## this will be done once done 
 
+# 4 part 2 cost estimates 
 
+## estimates rougly 
+
+30$ / month for an instance running all the time 
+
+EIP is 0 a month cause its attached to a running aws instance
+
+AMI 0 a month, free on ubuntu
+
+35.00$ a month expected, which includes all aspects, including storage
 # 5 AWS setup and instructions 
 
 ## VPC setup
