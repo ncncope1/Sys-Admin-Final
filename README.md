@@ -105,3 +105,15 @@ if a plugin wont load, its likely because grafana.ini hasnt been updated and doe
 ## Data source timeout
 
 This is usually a issue caused by the grafana security not having permission to reach the data source
+
+# Extra Stuff, access plan, etc
+
+## Access plan and Seucirty
+
+Make the Server admin be accessible through only ssh through port 22
+
+Users access through port 443
+
+Systems, external apps connect using service accounts 
+
+
