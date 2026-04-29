@@ -22,6 +22,7 @@ wget https://dl.grafana.com/grafana-enterprise/release/13.0.1/grafana-enterprise
 ## Third
 sudo dpkg -i grafana-enterprise_13.0.1_24542347077_linux_amd64.deb
 
+after this, if admin use the ip given with the key pair to access grafana
 ## follow the above listed commands
 ## After this, the terminal should tell you grafana was installed correctly
 
