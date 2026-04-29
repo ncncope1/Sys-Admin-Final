@@ -120,11 +120,29 @@ Systems, external apps connect using service accounts
 
 ## AWS specifics
 
+
 ### instance specifics
  I chose for my instance, ubuntu as thats the OS I was using, giving it the 20 gb of storage, using the grafana vpc, grafana security group and a key pair for grafana 
 
-### VPC specifics
+### network ACL specifics
 
+for my network acl rules, I allowed all traffic, as I sued my security group to deny who I want to, so throug the acl I allowed all rules
+It also has an association with one subnet, which is the grafana one
+
+### Route table specifics
+for route table, two routes, 0.0.0.0/0  to my internet gateway to create the table and to control it
+
+10.0.0.0/16 for local to allow me local access
+
+### Subnet specifics
+associated with all the grafana stuff mentioned previously
+249 available ipv4 addressses 
+this is to make sure the rest works
+
+### VPC specifics
+set to 10.0.0.0/16 with all the grafana things on it, such as security group, route table, etc 
+this allows me to put it on a instance and run the ssh
+I wanted it public because public can only read, not write or execute
 ### Security specifics
 
 I have 4 rules in my security group
