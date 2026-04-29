@@ -21,6 +21,9 @@ internet gateway for grafana
 <img width="1905" height="942" alt="Screenshot 2026-04-29 112718" src="https://github.com/user-attachments/assets/2be3e072-6506-43a5-8796-c5336efd6219" />
 access as user with no write access
 this is the read only user
+<img width="1907" height="937" alt="Screenshot 2026-04-29 113713" src="https://github.com/user-attachments/assets/0ac6e994-80b8-457a-a599-7871bed1d90b" />
+what it does when ssh link is closed
+
 
 
 
