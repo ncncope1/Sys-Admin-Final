@@ -18,6 +18,9 @@ subnet for grafana
 route table screenshots for grafana
 <img width="1608" height="273" alt="Screenshot 2026-04-29 111407" src="https://github.com/user-attachments/assets/be50184d-a778-404e-9d66-691b0a8f5d2d" />
 internet gateway for grafana
+<img width="1905" height="942" alt="Screenshot 2026-04-29 112718" src="https://github.com/user-attachments/assets/2be3e072-6506-43a5-8796-c5336efd6219" />
+access as user with no write access
+this is the read only user
 
 
 
