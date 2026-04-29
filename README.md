@@ -1,4 +1,5 @@
 #  Choice for this project was Grafana
+
 Chose because I was recommended and it sounded interesting
 
 #  Suitable instance type
@@ -97,6 +98,7 @@ roughlu 500 MB will be used roughly
 
 24 hour recovery point
 
+actual goal is less than 30 minutes for the recovery, but its expected to be around 15 minutes
 # 9 common trouble shooting
 
 ## Plugin Signature Verification
@@ -116,4 +118,22 @@ Users access through port 443
 
 Systems, external apps connect using service accounts 
 
+## AWS specifics
 
+### instance specifics
+ I chose for my instance, ubuntu as thats the OS I was using, giving it the 20 gb of storage, using the grafana vpc, grafana security group and a key pair for grafana 
+
+### VPC specifics
+
+### Security specifics
+
+I have 4 rules in my security group
+
+#### HTTP port 80
+ used to redirect users for ssl verification
+#### Custom TCP port 3000
+this is used to test it and to run stuff initially, I may delete this once I dont need it
+#### HTTPS ports 443 
+this is used to allow users access to the grafana terminal
+#### SSH port 22
+used for admin stuff, port 22 for ssh into it
