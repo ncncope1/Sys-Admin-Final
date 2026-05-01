@@ -24,6 +24,7 @@ Nested bullets should be in form: `* Last name - specific detail` where specific
 * Pet
 * rummel band, marching cymbals
 * maltby long walks on the beach + gardening fav plant is lucky banboo
+* walker reading, favorite series is the thief by megan turner 
 
 ---
 
@@ -39,6 +40,8 @@ Nested bullets should be in form: `* Last name - OS version` where OS version is
 
 * rummel band 26.04 
 * maltby  ubuntu 24.04 lts
+* walker  debian 13
+
 ---
 
 ### 💾 Software
@@ -58,8 +61,8 @@ Nested bullets should be in form: `* Last name - software version` where softwar
 * ownCloud
 
 * rummel homepage 1.12.3
-* maelie 3.16 maltb:w
-y
+* maelie 3.16 maltby
+* walker prox mox 9.1.9
 ---
 
 ### 🧪 Live Demo
@@ -74,6 +77,10 @@ Nested bullets should be in form: `* Last name - describe interaction / demonstr
 * Rummel Viewed Dashboard
 * Rummel showed host information and the pages
 
+* had own name for the instance, and it worked on others website
+* maltby showed around the site
+* walker manages instances, changes and edits drive layout, storage and backup controls
+
 ---
 
 ### 🔐 Network Security
@@ -87,6 +94,12 @@ Nested bullets should be in form: `* Last name - defend what about their network
 * Rummel allowed all wright state ips and 2, port 3000
 * Rummel no negatives
 * simple yet affective
+
+* maltby had some rules for mealie and ldap, mealie is port 9000 so he used areverse proxy to port 81
+* maltby nginx rule enabled proxy
+
+* walker negative, no system firewall
+* acl with ssh http and https, from home ip and wright state ip 
 ### ⚠️ Vulnerability Vectors
 
 Inquire about potential vulnerability vectors of their self-hosted software. They may have "patched" / addressed the vulnerability during their project implementation. If a suspected vulnerability is not on this list add a new bullet.  
@@ -100,6 +113,11 @@ Nested bullets should be in form: `* Last name - describe how software has this 
 
 * rummel ssh from write state with the ssh key, no log in
 * cant really do any admin stuff within it
+
+* maltby saved the ips to excel sheet, could be an issue if someone access the excel sheet
+* maltby saved excel sheet to desktoop
+* maltby importer is a flaw
+* walker if someone could get a vm maybe they could elevate
 ---
 
 ### 💥 Live Troubleshooting / Future Fixes
@@ -113,4 +131,5 @@ Nested bullets should be in form: `* Last name - description of situation`
 * ____ needs to fix...
 
 * rummel maybe avoid only wright state ips as thats a vulnerability, find a way thats better than that, but I dont really know
+
 ---
