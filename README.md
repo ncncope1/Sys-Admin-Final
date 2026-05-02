@@ -1,7 +1,21 @@
+
+
 #  Choice for this project was Grafana
 
 Chose because I was recommended and it sounded interesting
+## what is Grafana? 
 
+Grafana, by definition, is a program used for visualization, to understand and watch data, it is open source.
+
+Grafana itself doesnt store data, it visualizes it
+
+It can connect to a large amount of sources of data, some examples are Graphite, Influxdb and many more
+
+It possesses a large amount of tools to display the data, from simple graphs, to more complex things like heat maps
+
+Unified dashboaring, you can use it to combine different data, from multiple sources, to one dashboard, an example of this is, you could show cpu and gpu usage, and error logs all on the same dashboard to find out errors and where they come from
+
+Grafana can also be used for alerts, for example if cpu usage reaches a certain amount, it could email you that it reached that threshold
 #  Suitable instance type
 aws t.3 medium / gcp e2-medium  2 cpus and 4 gbs of ram handles several users perfectly
 
