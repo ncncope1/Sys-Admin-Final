@@ -46,6 +46,7 @@ after this, if admin use the ip given with the key pair to access grafana
 ## Server Administration
 Method SSH via public keys
 use this for OS updates, plugin manual installs, and configuration files
+ssh key is also very secure as its stored locally and on aws
 ## User Access for human users
 Role based controls RWE (Read Write Edit)
 only read for users, RWE for admins
@@ -53,8 +54,7 @@ only read for users, RWE for admins
 Service Accounts, instead of just using API keys, I am gonna use service accounts as they are easier (this may change cause API is also easier to setup)
 
 Service accounts were used, as they are more secure, and are able to be more specific
-# 4 Demonstration 
-## this will be done once done 
+# 4 Demonstration
 
 # 4 part 2 cost estimates 
 
@@ -203,7 +203,6 @@ access as user with no write access
 this is the read only user
 <img width="1907" height="937" alt="Screenshot 2026-04-29 113713" src="https://github.com/user-attachments/assets/0ac6e994-80b8-457a-a599-7871bed1d90b" />
 what it does when ssh link is closed
-
 
 
 
