@@ -18,15 +18,16 @@ Unified dashboaring, you can use it to combine different data, from multiple sou
 Grafana can also be used for alerts, for example if cpu usage reaches a certain amount, it could email you that it reached that threshold
 #  Suitable instance type
 aws t.3 medium / gcp e2-medium  2 cpus and 4 gbs of ram handles several users perfectly
-
+This handles multiple users, but doesnt use too much power
 ## Storage
 20 gbs of storage in an ssd would be preferable, but a hard disk drive can also work
+SSD was used, as its faster, and the 20 gb gives plenty of space for usage
 # 1 OS chosen
 
 Ubuntu is going to be what I chose, as its both good for the job and the OS I have the most experience with
-24.04 is ubuntu version
+22.04 is ubuntu version
 Linux is also the native habitat for Grafana so that simplifies the choice significantly 
-
+Linux also is the main OS used in this class, and the one I have most experience with
 # 2 Installation Steps
 
 ## First
@@ -39,7 +40,7 @@ sudo dpkg -i grafana-enterprise_13.0.1_24542347077_linux_amd64.deb
 after this, if admin use the ip given with the key pair to access grafana
 ## follow the above listed commands
 ## After this, the terminal should tell you grafana was installed correctly
-
+## if it doesnt, check the installation steps
 # 3 Access Plan
 
 ## Server Administration
@@ -47,10 +48,11 @@ Method SSH via public keys
 use this for OS updates, plugin manual installs, and configuration files
 ## User Access for human users
 Role based controls RWE (Read Write Edit)
-
+only read for users, RWE for admins
 ## System Access
 Service Accounts, instead of just using API keys, I am gonna use service accounts as they are easier (this may change cause API is also easier to setup)
 
+Service accounts were used, as they are more secure, and are able to be more specific
 # 4 Demonstration 
 ## this will be done once done 
 
