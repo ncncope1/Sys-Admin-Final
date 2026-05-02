@@ -101,12 +101,12 @@ it also alerts automatically
 
 # 8 Backup and Disaster using the 3-2-1 rule
 
-3 copies, in Live DB, local and S3 cloud
+3 copies, in Live DB, local and S3 cloud  this ensures that there are three points of failure, ensuring a higher degree of overall safety and keeping the safety of having three failure points instead of one
 
-2 media, SSD locally, and object storage in S3
+2 media, SSD locally, and object storage in S3, this ensures that there is a backup if there is an ssd failure, and that the ssd failing doesnt destroy and harm the program
 
-1 Offsite, S3 bucket in a different AWS region
-
+1 Offsite, S3 bucket in a different AWS region, which creates a backup every about 2 hourss, to ensure as little loss as possible, this will ensure that even if the onsite is lost, you will not lose  all of your progress 
+This also projects against regional outages, natural disastors, and infastructure failure
 roughlu 500 MB will be used roughly
 
 15 minute estimated recovery time
