@@ -170,7 +170,7 @@ this is used to test it and to run stuff initially, I may delete this once I don
 this is used to allow users access to the grafana terminal
 #### SSH port 22
 used for admin stuff, port 22 for ssh into it
-
+#### note fixed to allow wright states all ips, cause I had my ip previously
 #### storage amount and reason
 I set 20 gb so I had plenty to use it properly`
 I also wanted plenty of space so I didnt go over, 20 gb seemed appropriate for this
